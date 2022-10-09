@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('ProximaNova-Regular.woff') format('woff');
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure, figcaption, footer, header, hgroup,  menu, nav, output, ruby, section, summary, time, mark, audio, video {  
+    margin: 0;  
+    padding: 0;  
+    border: 0;
+}
+
+html{
+    font-family: "Proxima Nova", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body{
+    background-color: #F1F5F8;
+}
+
+.header{
+    padding-top: 55px;
+    height: 512px;
+    background-image: url("./img/SVG/Backgroung-mobile.svg");
+    background-color: #23123A;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+.nav-list{
+    background-color: #fff;
+    display: flex;
+    height: 45px;
+    justify-content: space-evenly;
+}
+
+.nav-list li{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #EDEFF0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+}
+
+.web{
+    display: none;
+}
+
+.hero-header-text{
+    margin-top: 44px;
+    color: #fff;
+    font-weight: 700;
+    max-width: 260px;
+    font-size: 54px;
+    padding: 0 35px;
+}
+
+.body-header{
+    margin: 27px 0;
+    padding:  0 15px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.body-card{
+    background-color: #fff;
+    padding: 20px 15px;
+}
+
+.body-card-header-text{
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.rating-con{
+    display: none;
+}
+
+.image-promo{
+    display: flex;
+    margin-bottom: 27px;
+}
+
+.promo-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.promo-con-details{
+    font-size: 15px;
+    text-align: center;
+}
+
+.promo-con-action{
+    margin-top: 15px;
+    background-color: #59D8D1;
+    color: #fff;
+    padding: 7.5px 15px;
+    border-radius: 30px;
+}
+
+.promo-details{
+    padding-left: 15px;
+}
+
+.promo-details li{
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 9px;
+}
+
+.show-more{
+    color: #1194F6;
+}
+
+.promo-cta{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #FA6E3D;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.line-divider{
+    margin: 20px -15px;
+    border: 0.25px solid #000;
+}
+
+.additional-details-link{
+    font-size: 15px;
+    line-height: 20px;
+    color: #1194F6;
+    text-decoration: none;
+}
+
+
+@media (min-width: 767px) {
+    .header{
+        padding-top: 55px;
+        height: 632px;
+        background-image: url("./img/SVG/Background-web.svg");
+        background-color: #23123A;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    .web{
+        display: inline;
+    }
+
+    .nav-list li{
+        font-size: 16px;
+    }
+
+    .hero-header-text{
+        max-width: 1000px;
+        font-size: 102px;
+        margin: 66px auto 0;
+        padding: 0 56px;
+    }
+
+    .body{
+        padding: 0 56px 55px;
+    }
+
+    .body-header{
+        margin: 51px 0 30px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        padding: 0;
+    }
+
+    .body-card{
+        box-sizing: border-box;
+        max-width: 1000px;
+        padding: 48px 76px;
+    }
+
+    .body-card-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .body-card-header-text{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .rating-con{
+        display: flex;
+        align-items: center;
+    }
+
+    .rating-stars{
+        width: 71px;
+        margin-right: 10px;
+    }
+
+    .rating-text{
+        display: block;
+        width: max-content;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .promo-com{
+        display: grid;
+        grid-template-columns: 280px auto;
+    }
+
+    .promo-con{
+        justify-content: flex-start;
+    }
+
+    .promo-con-details{
+        max-width: 82px;
+    }
+
+    .promo-details{
+        padding-left: 35px;
+    }
+
+    .promo-details li{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .line-divider{
+        margin: 20px 0;
+    }
+
+    .additional-details-link{
+        font-size: 18px;
+        line-height: 34px;
+    }
+}
+
+@media (min-width: 1125px){
+    .con{
+        width: 1124px;
+    }
+
+    .hero-header-text{
+        width: 1000px;
+    }
+
+    .body-header{
+        width: 1000px;
+        margin: 51px auto 30px;
+        padding: 0;
+    }
+
+    .body-card{
+        max-width: none;
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
